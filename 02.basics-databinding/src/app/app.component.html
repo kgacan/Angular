@@ -1,0 +1,15 @@
+
+<input type="text" [(ngModel)]="username"/>
+<p>{{username}}</p>
+<button [disabled]="isUsernameHasValue()" (click)="resetUsername()">Reset userneme</button>
+
+<hr/>
+
+<button (click)="togglePassword()">Display details</button>
+
+<p *ngIf="displayPass">Secter password: "tuna"</p>
+
+<p *ngFor="let date of buttonClicks" 
+   [ngStyle]="{backgroundColor:setColor(date)}"
+   [ngClass]="{highThanFive: date >= 5}"
+   >{{date}}</p>
