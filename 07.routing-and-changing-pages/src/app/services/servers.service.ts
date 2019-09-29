@@ -21,4 +21,14 @@ export class ServerService {
     });
     return ser;
   }
+
+  updateServer(server: Server) {
+    let serv = this.servers.find(s => {
+      return s.id === server.id;
+    });
+    if (serv) {
+      serv.name = server.name;
+      serv.status = server.status;
+    }
+  }
 }

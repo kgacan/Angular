@@ -11,6 +11,8 @@ import { HomeComponent } from "./home/home.component";
 import { ServerComponent } from "./servers/server/server.component";
 import { UserComponent } from "./users/user/user.component";
 import { EditComponent } from "./servers/edit/edit.component";
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ErrorPageComponent } from './error-page/error-page.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { EditComponent } from "./servers/edit/edit.component";
     HomeComponent,
     ServerComponent,
     UserComponent,
-    EditComponent
+    EditComponent,
+    PageNotFoundComponent,
+    ErrorPageComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

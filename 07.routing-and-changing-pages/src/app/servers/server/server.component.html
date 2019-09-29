@@ -2,6 +2,6 @@
 
 <p>Server status is: {{ server.status }}</p>
 
-<button class="btn btn-primary" [routerLink]="['/servers', server.id, 'edit']">
+<button class="btn btn-primary" (click)=onEdit()>
   Edit Server
 </button>
